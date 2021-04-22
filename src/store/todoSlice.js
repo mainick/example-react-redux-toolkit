@@ -17,7 +17,5 @@ export const todoSlice = createSlice({
 // actions per il dispatch
 export const { addTodo } = todoSlice.actions;
 
-export const selectTodos = (state) => state.todo.todos;
-
 // reducer
 export default todoSlice.reducer;

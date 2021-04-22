@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
-import { selectTodos } from "../store/todoSlice";
 
 const List = () => {
-    const todos = useSelector(selectTodos);
+    const todos = useSelector(state => state.todo.todos);
     return (
         <ul id="list-todos">
             {todos.map((title,i) => (
